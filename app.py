@@ -1,5 +1,7 @@
 import streamlit as st
 from PIL import Image
+import os
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
 from utils.vision_helper import run_object_detection, check_content_safety
 from utils.nlp_helper import (
